@@ -1,0 +1,53 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="260dp"
+    android:layout_height="120dp"
+
+    android:backgroundTint="#00FFFFFF"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/sheet_name"
+        android:layout_width="237dp"
+        android:layout_height="52dp"
+        android:gravity="center"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/yes"
+        android:layout_width="88dp"
+        android:layout_height="40dp"
+        android:text="确定"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sheet_name"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <Button
+        android:id="@+id/no"
+        android:layout_width="88dp"
+        android:layout_height="40dp"
+        android:text="取消"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/sheet_name"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="50dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

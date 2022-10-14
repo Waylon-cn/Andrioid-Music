@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#00FFFFFF"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="450dp"
+        android:layout_height="18dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/collection"
+        app:srcCompat="@drawable/line"
+        tools:layout_editor_absoluteX="-29dp" />
+
+    <Button
+        android:id="@+id/collection"
+        android:layout_width="333dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#00FFFFFF"
+        android:text="我的收藏"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.201" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="411dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="-23dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageButton
+        android:id="@+id/more"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/record1"
+        app:layout_constraintEnd_toEndOf="@+id/record1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/record1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/more" />
+
+    <ImageButton
+        android:id="@+id/homepage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/recored2"
+        app:layout_constraintEnd_toStartOf="@+id/search"
+        app:layout_constraintStart_toEndOf="@+id/more"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/music" />
+
+    <!--    <ImageButton-->
+    <!--        android:id="@+id/explore"-->
+    <!--        android:layout_width="40dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:layout_marginTop="4dp"-->
+    <!--        android:background="#00FFFFFF"-->
+    <!--        android:scaleType="centerInside"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/recored2"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/search"-->
+    <!--        app:layout_constraintHorizontal_bias="0.752"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/more"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.0"-->
+    <!--        app:srcCompat="@drawable/explore2" />-->
+
+    <ImageButton
+        android:id="@+id/record1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/collection"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.737"
+        app:srcCompat="@drawable/playrecord" />
+
+    <ImageButton
+        android:id="@+id/search"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/recored2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toEndOf="@+id/more"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/search" />
+
+    <Button
+        android:id="@+id/recored2"
+        android:layout_width="333dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#00FFFFFF"
+        android:text="播放记录"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/collection"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/record1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.766" />
+
+    <ImageButton
+        android:id="@+id/collection2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/collection"
+        app:layout_constraintEnd_toEndOf="@+id/record1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/record1"
+        app:layout_constraintTop_toBottomOf="@+id/record1"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/like" />
+
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="259dp"
+        android:background="@drawable/mycheckbox"
+        android:button="@null"
+        android:checked="true"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/new_song_sheet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="15dp"
+        android:text="创建的歌单"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/check"
+        app:layout_constraintTop_toBottomOf="@+id/collection"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <ImageButton
+        android:id="@+id/new_song_sheet"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="56dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/check"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:srcCompat="@drawable/add1" />
+
+    <ImageButton
+        android:id="@+id/change_sheet"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/check"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:srcCompat="@drawable/android" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="450dp"
+        android:layout_height="18dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/collection"
+        app:layout_constraintTop_toBottomOf="@+id/recored2"
+        app:srcCompat="@drawable/line"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-29dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/homepage"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/homepage"
+        app:layout_constraintTop_toTopOf="@+id/homepage"
+        app:layout_constraintVertical_bias="0.579"
+        app:srcCompat="@drawable/culine" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="404dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.981"
+        app:srcCompat="@drawable/translucent" />
+
+    <TextView
+        android:id="@+id/music_play_data"
+        android:layout_width="235dp"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:text="目前没有正在播放的歌曲"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <CheckBox
+        android:id="@+id/music_play_pause"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/myplay"
+        android:button="@null"
+        android:checked="true"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.473"
+        tools:ignore="UnknownId" />
+
+    <ImageButton
+        android:id="@+id/lyrcis_click"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@+id/music_play_data"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:srcCompat="@drawable/lyrics_click" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sheet_name_View"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/dialog_content"
+            android:layout_width="221dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="36dp"
+            android:gravity="center"
+            android:text="伴着音乐入睡"
+            android:textSize="30dp"
+            tools:ignore="HardcodedText" />
+
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="361dp"
+            android:layout_height="33dp"
+            android:layout_marginBottom="39dp"
+            android:max="12"
+            android:min="0"
+            android:thumbTint="#002fa7" />
+
+        <LinearLayout
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/show"
+                android:layout_width="223dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:hint="未定时"
+                android:maxLength="3"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_width="92dp"
+                android:layout_height="46dp"
+                android:layout_gravity="center"
+                android:text="min"
+                android:textSize="26sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="361dp"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dialog_cancel"
+                android:layout_width="177dp"
+                android:layout_height="match_parent"
+
+                android:text="Cancel"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/dialog_sure"
+                android:layout_width="177dp"
+                android:layout_height="wrap_content"
+                android:text="Satrt"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
